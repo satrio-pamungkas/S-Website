@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+        <meta content="utf-8" http-equiv="encoding">        
+        <title>Register</title>
+        <link rel="stylesheet" href="{{url_for('static', filename='css/style-register.css')}}">
+        <link rel="shortcut icon" href="Favicon.svg" type="image/x-icon">
+        <script src="{{url_for('static', filename='js/script.js')}}"></script>
+    </head>
+    <body>
+        <div class="kotak-luar">
+            {% if message %}
+                <p style="text-align: center; margin-top:10px;">{{ message }}</p>
+            {% endif %}
+            <div class="kolom1">
+                <form action="{{url_for('register')}}" method="POST">
+                    <p class="keterangan">Nama Pengguna</p>
+                    {{ form.name(placeholder = "Nama Pengguna") }}
+                    <br>
+                    {% if form.name.errors %}
+                        {% for error in form.name.errors %}
+                            {{ error }} <br>
+                        {% endfor %}
+                    {% endif %}
+                    <p class="keterangan">Alamat Surel</p>
+                    {{ form.email(placeholder = "Alamat Surel") }}
+                    <br>
+                    {% if form.email.errors %}
+                        {% for error in form.email.errors %}
+                            {{ error }} <br>
+                        {% endfor %}
+                    {% endif %}
+                    <p class="keterangan">Kata Sandi</p>
+                    {{ form.password(placeholder = "Kata Sandi") }}
+                    <br>
+                    {% if form.password.errors %}
+                        {% for error in form.password.errors %}
+                            {{ error }} <br>
+                        {% endfor %}
+                    {% endif %}
+                    <p class="keterangan">Ulangi Kata Sandi</p>
+                    {{ form.repeat_password(placeholder = "Ulangi Kata Sandi") }}
+                    <br>
+                    {% if form.repeat_password.errors %}
+                        {% for error in form.repeat_password.errors %}
+                            {{ error }} <br>
+                        {% endfor %}
+                    {% endif %}
+                    <br>
+                    {{ form.csrf_token }}
+                    {{ form.submit(class_="button") }}
+                    <br>
+                    <p id="no-akun">Sudah punya akun ? <a id="no-akun-link" href="login.html">Masuk</a></p>
+                </form>
+            </div>
+            <div class="kolom2">
+                <h1>Buat akunmu</h1>
+                <p id="deskripsi">Lalu nikmati beberapa fitur lengkap hanya dengan menggunakan akun :</p>
+                <ul>
+                    <li>Melihat langsung dashboard utama</li>
+                    <li>Riwayat data yang telah usai</li>
+                    <li>Simpan, ekspor, dan impor data</li>
+                    <li>Akses layanan bantuan 24/7 </li>
+                    <li>Selalu mengikuti pembaruan terbaru</li>
+                </ul>
+            </div>
+            <hr>
+            <div class="footer">
+                <p>Created by : Muhammad Raihan Satrio</p>
+                <span>Background Photo by <a id="link" href="https://unsplash.com/@v2osk?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">v2osk</a> 
+                on <a id="link" href="https://unsplash.com/s/photos/nature?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+            </div>
+        </div>
+    </body>
+</html>

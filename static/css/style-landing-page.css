@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.base-background {
+    background-image: url("../img/background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+.opacity-background {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+}
+
+.ctn-1 {
+    position: fixed;
+    /* background-color: aqua;    */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.ctn-1 > h1#title {
+    font-family: 'Staatliches', cursive;
+    color: white;
+    text-align: center;
+    padding-top: 25px;
+}
+
+#logo {
+    position: fixed;
+    top: 0%;
+    left: 50%;
+}
+
+.ctn-1-1 {
+    text-align: center;
+}
+
+#daftar:hover {
+    background-color: darkslategrey;
+}
+
+#masuk:hover {
+    background-color: rgb(187, 230, 205);
+}
+
+@media screen and (max-width: 450px) {
+    #title {
+        font-size: 35px;
+    }
+
+    #logo {
+        width: 70px;
+        height: 70px;
+        margin-left: -35px;
+        margin-top: -35px;
+    }
+
+    #daftar, #masuk {
+        width: 130px;
+        height: 40px;
+        text-decoration: none;
+    }
+    
+    #daftar {
+        background-color: #48bb7c;
+        border: none;
+        color: white;
+        font-size: 15px;
+    }
+    
+    #masuk {
+        margin-top: 20px;
+        border: none;
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width: 451px) {
+    #title {
+        font-size: 70px;
+    }
+
+    #logo {
+        width: 100px;
+        height: 100px;
+        margin-left: -50px;
+        margin-top: -50px;
+    }
+
+    #daftar, #masuk {
+        width: 150px;
+        height: 50px;
+        text-decoration: none;
+        cursor: pointer;
+        margin: 8px;
+    }
+    
+    #daftar {
+        background-color: #48bb7c;
+        border: none;
+        color: white;
+        font-size: 20px;
+    }
+    
+    #masuk {
+        border: none;
+        font-size: 20px;
+    }
+}

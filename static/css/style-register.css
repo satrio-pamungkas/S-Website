@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css?family=Balsamiq Sans');
+
+body {
+    font-family: sans-serif;
+    font-size: medium;
+    background-image: url("../img/background.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.kotak-luar {
+    border-radius: 10px;
+    width: 550px;
+    height: 460px;
+    background-color: white;
+    box-shadow: 2px 1px 15px gray;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+} 
+
+.kolom1, .kolom2 {
+    height: 390px;
+    overflow-x: scroll;
+}
+
+.kolom1 {
+    width: 290px;
+    margin-right: 0px;
+    cursor: crosshair;
+}
+
+.kolom2 {
+    width: 260px;
+    margin-top: -390px;
+    margin-left: 290px;
+    border-left: 1px solid #48bb7c;
+    cursor: crosshair;
+}
+
+form {
+    margin-top: 25px;
+}
+
+.keterangan {
+    font-family: sans-serif;
+    font-size: x-small;
+    font-weight: 600;
+    color: rgb(46, 44, 44);
+    text-align: left;
+    margin-left: 27px;
+}
+
+input[type=text], input[type=password] {
+    margin-left: 25px;
+    width: 74%;
+}
+
+#no-akun {
+    font-family: sans-serif;
+    font-size: small;
+    text-align: center;
+}
+
+#no-akun-link {
+    font-weight: 600;
+    color: #48bb7c;
+}
+
+.button {
+    background-color: #48bb7c;
+    border: none;
+    color: white;
+    padding: 12px 32px;
+    text-decoration: none;
+    cursor: pointer;
+    width: 80%;
+    height: 40px;
+    margin-left: 25px;
+}
+
+h1 {
+    font-family: 'Balsamiq Sans';
+    font-size: x-large;
+    font-weight: 500;
+    margin-top: 30px;
+    margin-left: 50px;
+    color: #48bb7c;
+    position: static;
+
+}
+
+#deskripsi {
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    margin-left: 20px;
+    margin-right: 25px;
+}
+
+li {
+    list-style-type: circle;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    color: #48bb7c;
+    margin-right: 25px;
+}
+
+hr {
+    border-top: 1px solid #48bb7c;
+    width: 90%;
+    opacity: 0.4;
+}
+
+.footer {
+    margin-top: 7px;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: x-small;
+    opacity: 0.7;
+}
+
+#link {
+    font-weight: 600;
+    color: #48bb7c;
+}

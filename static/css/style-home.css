@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body, html {
+    height: auto;
+    margin: 0;
+    background-color: #48bb7c;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #48bb7c;
+    box-shadow: 0 4px 4px -1px rgba(0,0,0,0.25);
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#logo {
+    width: 30px;
+    height: 30px;
+    padding-left: 20px;
+    padding-top: 16px;
+    padding-right: 10px;
+}
+
+.ctn-1 {
+    width: 100%;
+    height: 250px;
+}
+
+.ctn-2 {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+}
+
+.ctn-1 > h1 {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 45px;
+    color: white;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 35px;
+    color: #137740;
+    line-height: 70px;
+    padding-top: 20px;
+}
+
+.short-desc {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: #137740;
+    margin-top: -40px;
+    margin-bottom: 10px;
+}
+
+.flex-container {
+    display: flex;
+    align-items: stretch;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.flex-container > div {
+    background-color: #137740;
+    color: white;
+    margin: 30px;
+    padding: 20px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.5);
+}
+
+.icon {
+    justify-content: center;
+    margin-top: 30px;
+    height: 75px;
+    width: 75px;
+
+}
+
+@media (max-width: 750px) {
+    .flex-container > div {
+        margin: 15px;
+    }
+}
+
+@media (max-width: 600px) {
+    body, html {
+        height: auto;
+    }
+
+    .ctn-1 > h1 {
+        font-size: 25px;
+    }
+
+    .flex-container {
+        flex-direction: column;
+    }
+
+    .flex-container > div {
+        font-size: 17px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    .short-desc {
+        font-size: 17px;
+    }
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda</title>
+    <link rel="shortcut icon" href="Favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style-home.css')}}">
+</head>
+<body>
+    <ul>
+        <li><img id="logo" src="Favicon.svg"></li>
+        <li><a href="home.html">Beranda</a></li>
+        <li style="float:right"><a href="{{url_for('login')}}">Keluar</a></li>
+    </ul>
+    <div class="ctn-1">
+        <h1><b>SELAMAT DATANG</b>, Admin !</h1>
+    </div>
+    <div class="ctn-2">
+        <div class="subtitle">
+            <h2>COMING SOON</h2>
+            <p class="short-desc">Beberapa fitur unggulan kami :</p>
+        </div>
+        <div class="flex-container">
+            <div style="flex-grow: 1">
+                <img class="icon" src="{{url_for('static', filename='img/data-quality.svg') }}">
+                <p>Database lengkap dan aman, sehingga data-data anda akan terjamin serta mudah diakses kapanpun dimanapun 24/7</p>
+            </div>
+            <div style="flex-grow: 1">
+                <img class="icon" src="{{url_for('static', filename='img/grow-money.svg') }}">
+                <p>Fitur AI untuk memprediksi profit serta mengupayakan untuk menghasilkan profit semaksimal mungkin</p>
+            </div>
+            <div style="flex-grow: 1">
+                <img class="icon" src="{{url_for('static', filename='img/nature-landscape.svg') }}">
+                <p>Lahan akan termonitor secara terpadu melalui sistem monitoring sehingga dapat diakses dimanapun dengan jaringan internet</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
